@@ -2,11 +2,11 @@
 
 ## Week 3 Lessons
 
--[x] Learn about ArcGIS Online Basics
--[x] Creating and Sharing GIS Content using ArcGIS Online
--[x] Read about Map Viewers and Web Maps
--[x] Learn what's new in ArcGIS Online
--[ ] Discover JSON and importing data into Web Maps
+- [x] Learn about ArcGIS Online Basics
+- [x] Creating and Sharing GIS Content using ArcGIS Online
+- [x] Read about Map Viewers and Web Maps
+- [x] Learn what's new in ArcGIS Online
+- [ ] Discover JSON and importing data into Web Maps
 
 ### Learn about ArcGIS Online Basics
 
@@ -25,12 +25,12 @@ Saved GeoJSON file
 
 ## Week 4 Lessons
 
--[ ] Introducing AGOL Developers Website
--[ ] AGOL Developers: Create a new empty layer
--[ ] Explore: Introduction to AGOL REST and Token Security
--[ ] Create Authentication Token
--[ ] Create API Key for Use in JavaScript Activities
--[ ] Explore and Enhance the Tutorials for ArcGIS JavaScript API
+- [ ] Introducing AGOL Developers Website
+- [ ] AGOL Developers: Create a new empty layer
+- [ ] Explore: Introduction to AGOL REST and Token Security
+- [ ] Create Authentication Token
+- [ ] Create API Key for Use in JavaScript Activities
+- [ ] Explore and Enhance the Tutorials for ArcGIS JavaScript API
 
 ### AGOL Developers: Create a new empty layer
 
