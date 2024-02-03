@@ -37,10 +37,12 @@ Saved GeoJSON file in GitHub for High Park Capybaras
 URL 1: Developers Details Item Page
 ```
 https://developers.arcgis.com/layers/f2421535c1a94732be835bae330191d1/
-
 ```
-Item ID: f2421535c1a94732be835bae330191d1
 
+Item ID: 
+```
+f2421535c1a94732be835bae330191d1
+```
 
 URL 2: AGOL Items Page
 ```
