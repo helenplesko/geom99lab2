@@ -28,7 +28,7 @@
             require(["esri/config", "esri/Map", "esri/views/MapView"], function(esriConfig, Map, MapView) {
                
                 // API Key created in ArcGIS Developers
-                // esriConfig.apiKey = "AAPK335892898ff545f48b840439f5b81612q2TzF7qUgfxsI-XEtZz66RLgeCW4PC7qwLLLpwtdcNF9I2gOsMes3SuipCfLKIEV";
+                esriConfig.apiKey = "AAPK335892898ff545f48b840439f5b81612q2TzF7qUgfxsI-XEtZz66RLgeCW4PC7qwLLLpwtdcNF9I2gOsMes3SuipCfLKIEV";
 
                 // Creating new map, where the basemap is topographic
                 const map = new Map({
@@ -44,11 +44,15 @@
                 });
 
             });
+
         </script>
 
     </head>
+    
     <body>
+
         <!-- Div to hold map -->
         <div id="viewDiv"></div>
+
     </body>
 </html>
