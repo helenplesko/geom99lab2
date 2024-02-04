@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Tutorial completed by Helen Plesko on February 3, 2024 -->
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <title>ArcGIS Maps SDK for JavaScript Tutorials: Display a map</title>
+
+        <style>
+            html,
+            body,
+            #viewDiv {
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+
+        <!-- References to the CSS file and JS library -->
+        <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
+        <script src="https://js.arcgis.com/4.28/"></script>
+
+        <!-- Load the modules with the require function -->
+        <script>
+            require([
+                "esri/config", 
+                "esri/Map", 
+                "esri/views/MapView",
+                "esri/Graphic",
+                "esri/layers/GraphicsLayer"
+                ], function(esriConfig,Map, MapView, Graphic, GraphicsLayer) {
+               
+                // API Key created in ArcGIS Developers
+                esriConfig.apiKey = "AAPK335892898ff545f48b840439f5b81612q2TzF7qUgfxsI-XEtZz66RLgeCW4PC7qwLLLpwtdcNF9I2gOsMes3SuipCfLKIEV";
+
+                // Creating new map, where the basemap is topographic
+                const map = new Map({
+                    basemap: "arcgis/topographic" // basemap styles service accessed with API Key
+                });
+
+                // Create a MapView, so the map is centered on an area of the Santa Monica Mountains in California
+                const view = new MapView({
+                    map: map,
+                    center: [-118.805, 34.027], // Longitude, latitude of center of map
+                    zoom: 13, // Zoom level
+                    container: "viewDiv" // Div element to hold contents of the map
+                });
+
+                // Add the graphics layer to store graphics
+                const graphicsLayer = new GraphicsLayer();
+                map.add(graphicsLayer);
+
+                // Add a point positioned at Point Dume Beach
+                const point = { // Create a point
+                    type: "point",
+                    longitude: -118.80657463861,
+                    latitude: 34.0005930608889
+                }; 
+                const simpleMarkerSymbol = { // Customize the marker
+                    type: "simple-marker",
+                    color: [226, 119, 40], // Orange
+                    outline: {
+                        color: [255, 255, 255], // White
+                        width: 1
+                    }
+                };
+                const pointGraphic = new Graphic({ // Create a point graphic
+                    geometry: point,
+                    symbol: simpleMarkerSymbol
+                });
+                graphicsLayer.add(pointGraphic);
+
+                // Add a line graphic positioned along Westward Beach
+                const polyline = { // Create a line
+                    type: "polyline",
+                    paths: [
+                        [-118.821527826096, 34.0139576938577], // Longitude, latitude
+                        [-118.814893761649, 34.0080602407843], // Longitude, latitude
+                        [-118.808878330345, 34.0016642996246]  // Longitude, latitude
+                    ]
+                };
+                const simpleLineSymbol = { // Customize the line
+                    type: "simple-line",
+                    color: [226, 119, 40], // Orange
+                    width: 2
+                };
+                const polylineGraphic = new Graphic({ // Create a polyline graphic
+                    geometry: polyline,
+                    symbol: simpleLineSymbol
+                });
+                graphicsLayer.add(polylineGraphic);
+
+                // Add a polygon positioned at Mahou Riviera
+                const polygon = { // Create a polygon
+                    type: "polygon",
+                    rings: [
+                        [-118.818984489994, 34.0137559967283], // Longitude, latitude
+                        [-118.806796597377, 34.0215816298725], // Longitude, latitude
+                        [-118.791432890735, 34.0163883241613], // Longitude, latitude
+                        [-118.79596686535, 34.008564864635],   // Longitude, latitude
+                        [-118.808558110679, 34.0035027131376]  // Longitude, latitude
+                    ]
+                };
+                const simpleFillSymbol = { // Customize the polygon
+                    type: "simple-fill",
+                    color: [227, 139, 79, 0.8],  // Orange, opacity 80%
+                    outline: {
+                        color: [255, 255, 255],
+                        width: 1
+                    }
+                };
+                const popupTemplate = { // Create a pop-up for the polygon graphic when it is clicked
+                    title: "{Name}",
+                    content: "{Description}"
+                }
+                const attributes = { // Info for inside pop-up for polygon graphic
+                    Name: "Graphic",
+                    Description: "I am a polygon"
+                }
+                const polygonGraphic = new Graphic({ // Create a polygon graphic
+                    geometry: polygon,
+                    symbol: simpleFillSymbol,
+                    attributes: attributes,
+                    popupTemplate: popupTemplate
+                });
+                graphicsLayer.add(polygonGraphic);
+
+            });
+        </script>
+
+    </head>
+    
+    <body>
+
+        <!-- Div to hold map -->
+        <div id="viewDiv"></div>
+
+    </body>
+</html>
