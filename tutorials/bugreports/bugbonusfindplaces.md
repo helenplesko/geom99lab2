@@ -16,7 +16,7 @@ The bug doesn't happen sporatically for me, it happens every time. Here are the 
 
 The code in the tutorial is expected to display a map that allows you to see places on the map depending on the category chosen. It also allows you to click the graphics as well, to find the name and address of the places in a pop-up. Here is a screenshot taken from the tutorial page:
 
-![Expected Result](/tutorials/bugimages/expectedaddpointlinepolygon.png)
+![Expected Result](/tutorials/bugimages/expectedbonusfindplaces.png)
 
 ## Results from the bug
 
@@ -24,10 +24,10 @@ The bug produced no map and two errors:
 
 URL:
 ```
-https://helenplesko.github.io/geom99lab2/tutorials/addpointlinepolygon.html
+https://helenplesko.github.io/geom99lab2/tutorials/bonusfindplaces.html
 ```
 
-![Errors](/tutorials/bugimages/bugaddpointlinepolygon.png)
+![Errors](/tutorials/bugimages/bugbonusfindplaces.png)
 
 ## Attempts to debug
 
@@ -37,25 +37,21 @@ The first attempt to debugging this was to comment out the API key, as there was
 
 URL to map:
 ```
-https://helenplesko.github.io/geom99lab2/tutorials/testpages/testoneaddpointlinepolygon.html
+https://helenplesko.github.io/geom99lab2/tutorials/testpages/testonebonusfindplaces.html
 ```
 
-![Attempt 1 results](/tutorials/bugimages/testoneaddpointlinepolygon.png)
+![Attempt 1 results](/tutorials/bugimages/testonebonusfindplaces.png)
 
-### Attempt 2: Use a different code
+### Attempt 2: Use a different API Key
 
-For the second attempt, I used the older version of the stylesheet, reference to ArcGIS, and basemaps. The code can be found in the "Display a map (2D)" tutorial. 
-
-![Older version of code](/tutorials/bugimages/olderversioncode.png)
-
-I used this code and it produced the following, which I believe is a closer result to what we want the map to display:
+For the second attempt, I created a new API Key, without a referrer link this time, and here are the results:
 
 URL to map:
 ```
-https://helenplesko.github.io/geom99lab2/tutorials/testpages/testtwoaddpointlinepolygon.html
+https://helenplesko.github.io/geom99lab2/tutorials/testpages/testtwobonusfindplaces.html
 ```
 
-![Attempt 2 results](/tutorials/bugimages/testtwoaddpointlinepolygon.png)
+![Attempt 2 results](/tutorials/bugimages/testtwobonusfindplaces.png)
 
 ## Environment Details
 
