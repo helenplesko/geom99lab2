@@ -1,5 +1,9 @@
 # Bug Report for Tutorial 2: Add a point, line, and polygon
 
+## Debugged!!!
+
+When playing around with the basemaps for my customized map, an error had popped up saying the basemap name I chose was invalid. I noticed in the list of valid basemaps, "arcgis/topographic" wasn't there, but "topo" was. I changed that line in the code and commented out my API Key and voila! The intended map was produced!
+
 ## Describe the bug
 
 The purpose of the ArcGIS Maps SDK for JavaScript "Add a point, line, and polygon" Tutorial is to create a map that displays the topographic basemap layer for an area of the Santa Monica Mountains in California with point, line, and polygon graphics, plus a pop-up when the polygon is clicked. However, after completing the tutorial and opening the html page in Google Chrome, the graphics and pop-up appears, but the basemap doesn't.
