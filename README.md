@@ -27,10 +27,14 @@ Saved GeoJSON file in GitHub for High Park Capybaras
 
 - [x] Introducing AGOL Developers Website
 - [x] AGOL Developers: Create a new empty layer
-- [ ] Explore: Introduction to AGOL REST and Token Security
-- [ ] Create Authentication Token
-- [ ] Create API Key for Use in JavaScript Activities
+- [x] Explore: Introduction to AGOL REST and Token Security
+- [x] Create Authentication Token
+- [x] Create API Key for Use in JavaScript Activities
 - [ ] Explore and Enhance the Tutorials for ArcGIS JavaScript API
+
+### Introducing AGOL Developers Website
+
+Created my own "Developers" account
 
 ### AGOL Developers: Create a new empty layer
 
@@ -54,30 +58,52 @@ URL 3: REST API (without token)
 https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/fall_geom65_tree_collection1/FeatureServer
 ```
 
-### Explore: Introduction to AGOL REST and Token Security
-
-### Create Authentication Token
-
-### Create API Key for Use in JavaScript Activities
-
 ### Explore and Enhance the Tutorials for ArcGIS JavaScript API
 
-Link to Tutorial 1: Display a map 2D
+#### Tutorial 1: Display a map 2D
+
+URL:
+```
+https://helenplesko.github.io/geom99lab2/tutorials/displayamap.html
+```
+
+Bug Report:
 ```
 
 ```
 
-Link to Tutorial 2:
+#### Tutorial 2: Add a point, line, and polygon
+
+URL:
+```
+https://helenplesko.github.io/geom99lab2/tutorials/addpointlinepolygon.html
+```
+
+Bug Report:
 ```
 
 ```
 
-Link to Tutorial 3 (Bonus):
+#### Tutorial 3 (Bonus): Find places
+
+URL:
+```
+https://helenplesko.github.io/geom99lab2/tutorials/bonusfindplaces.html
+```
+
+Bug Report:
 ```
 
 ```
 
-Link to Enhanced Tutorial:
+#### Enhanced Map:
+
+URL:
+```
+https://helenplesko.github.io/geom99lab2/tutorials/enhancedmap.html
+```
+
+Bug Report:
 ```
 
 ```
