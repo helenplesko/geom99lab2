@@ -102,8 +102,3 @@ URL:
 ```
 https://helenplesko.github.io/geom99lab2/tutorials/enhancedmap.html
 ```
-
-Bug Report:
-```
-
-```
