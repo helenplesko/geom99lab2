@@ -37,48 +37,86 @@
                 // Creating new map, where the basemap is World Street Map (Night)
                 // Basemap source: https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap
                 const map = new Map({
-                    basemap: "osm" // basemap styles service accessed with API Key
+                    basemap: "osm" 
                 });
 
-                // Create a MapView, so the map is centered on Toronto, Ontario
+                // Create a MapView, so the map is centered on Paris, France
                 const view = new MapView({
                     map: map,
-                    center: [43.6532, -79.3832], // Longitude, latitude of center of map
-                    zoom: 10, // Zoom level
-                    container: "viewDiv" // Div element to hold contents of the map
+                    center: [48.85464816934583, 2.3500685426504795],
+                    zoom: 10, 
+                    container: "viewDiv"
                 });
 
-                // Add the graphics layer to store graphics
-                const graphicsLayer = new GraphicsLayer();
-                map.add(graphicsLayer);
-
-                // Add a point positioned at Point Dume Beach
-                const heartPoint = { // Create a point
-                    type: "point",
-                    longitude: 43.645972501828965,
-                    latitude: -79.39578469954743
-                }; 
-                const heartMarkerSymbol = { // Customize the marker
-                    type: "picture-marker",
-                    url: "https://img.icons8.com/tiny-color/16/like.png"
+                // Add a polygon of a heart positioned on Paris, France
+                // Polygon drawn and coordinates retrieved from https://geojson.io/
+                const heartPolygon = { 
+                    type: "polygon",
+                    rings: [
+                        [48.88280407533125, 2.343262614044562],
+                        [48.89658151875781, 2.3115251236245626], 
+                        [48.87341322477218, 2.2711173443819064], 
+                        [48.81062557300041, 2.348837063394143],   
+                        [48.8779456591995, 2.427046069565449]  
+                        [48.89725030631351, 2.3770697257148754],  
+                        [48.88280407533125, 2.343262614044562]  
+                    ]
                 };
-
+                const heartFillSymbol = { // Customize the polygon
+                    type: "simple-fill",
+                    color: [220, 20, 60, 0.8],  // Orange, opacity 80%
+                    outline: {
+                        color: [139, 0, 0],
+                        width: 1
+                    }
+                };
                 const heartPopUp = { // Create a pop-up for the polygon graphic when it is clicked
                     title: "{Name}",
                     content: "{Description}"
                 }
                 const heartAttributes = { // Info for inside pop-up for polygon graphic
-                    Name: "SOMA Chocolatemaker",
-                    Description: "443 King St W, Toronto, ON M5V 1K4"
+                    Name: "Paris, France",
+                    Description: "The city of love."
                 }
-                const pointGraphic = new Graphic({ // Create a point graphic
-                    geometry: heartPoint,
-                    symbol: heartMarkerSymbol,
+                const polygonGraphic = new Graphic({ // Create a polygon graphic
+                    geometry: heartPolygon,
+                    symbol: heartFillSymbol,
                     attributes: heartAttributes,
                     popupTemplate: heartPopUp
                 });
+                graphicsLayer.add(polygonGraphic);
+
+                // Add the graphics layer to store graphics
+             //   const graphicsLayer = new GraphicsLayer();
+             //   map.add(graphicsLayer);
+
+                // Add a point positioned at Point Dume Beach
+             //   const heartPoint = { // Create a point
+             //       type: "point",
+             //       longitude: 43.645972501828965,
+             //       latitude: -79.39578469954743
+             //   }; 
+             //   const heartMarkerSymbol = { // Customize the marker
+             //       type: "picture-marker",
+            //        url: "https://img.icons8.com/tiny-color/16/like.png"
+             //   };
+
+      //          const heartPopUp = { // Create a pop-up for the polygon graphic when it is clicked
+      //              title: "{Name}",
+      //              content: "{Description}"
+      //          }
+       ////         const heartAttributes = { // Info for inside pop-up for polygon graphic
+      //              Name: "SOMA Chocolatemaker",
+      //              Description: "443 King St W, Toronto, ON M5V 1K4"
+      //          }
+      //          const pointGraphic = new Graphic({ // Create a point graphic
+       //             geometry: heartPoint,
+       //             symbol: heartMarkerSymbol,
+       //             attributes: heartAttributes,
+       //             popupTemplate: heartPopUp
+       //         });
                 
-                graphicsLayer.add(pointGraphic);
+       //         graphicsLayer.add(pointGraphic);
 
             });
         </script>
