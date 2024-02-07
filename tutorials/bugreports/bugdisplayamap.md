@@ -22,7 +22,6 @@ The code in the tutorial is expected to display a map that displays the topograp
 
 The bug produced no map and two errors:
 
-URL:
 ```
 https://helenplesko.github.io/geom99lab2/tutorials/displayamap.html
 ```
@@ -35,7 +34,6 @@ https://helenplesko.github.io/geom99lab2/tutorials/displayamap.html
 
 The first attempt to debugging this was to comment out the API key, as there was an error retrieving authorization. This change didn't produce a map. Instead, a window popped up where I had to sign into AGOL to see the item. My login wasn't working, and I wondered if it was because we need to sign into Fleming organization when signing in to AGOL.
 
-URL to map:
 ```
 https://helenplesko.github.io/geom99lab2/tutorials/testpages/testonedisplayamap.html
 ```
@@ -52,7 +50,6 @@ The "Display a map (2D)" tutorial used an older version of the stylesheet, refer
 
 I used this code and it produced the following, which I believe is a closer result to what we want the map to display:
 
-URL to map:
 ```
 https://helenplesko.github.io/geom99lab2/tutorials/testpages/testtwodisplayamap.html
 ```
@@ -65,4 +62,4 @@ https://helenplesko.github.io/geom99lab2/tutorials/testpages/testtwodisplayamap.
 - Google Chrome is the web browser used to open maps.
 - The problem is happening on my computer and on my iPhone.
 - API Key was made in ArcGIS Developers.
-- Referrer Link includes an * at the end.
+- Referrer Link for API Key includes an * at the end.

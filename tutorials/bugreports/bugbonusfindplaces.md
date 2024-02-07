@@ -22,7 +22,6 @@ The code in the tutorial is expected to display a map that allows you to see pla
 
 The bug produced no map and two errors:
 
-URL:
 ```
 https://helenplesko.github.io/geom99lab2/tutorials/bonusfindplaces.html
 ```
@@ -35,18 +34,16 @@ https://helenplesko.github.io/geom99lab2/tutorials/bonusfindplaces.html
 
 The first attempt to debugging this was to comment out the API key, as there was an error retrieving authorization. This change didn't produce a map. Instead, a window popped up where I had to sign into AGOL to see the item. My login wasn't working, and I wondered if it was because we need to sign into Fleming organization when signing in to AGOL.
 
-URL to map:
 ```
 https://helenplesko.github.io/geom99lab2/tutorials/testpages/testonebonusfindplaces.html
 ```
 
 ![Attempt 1 results](/tutorials/bugimages/testonebonusfindplaces.png)
 
-### Attempt 2: Use a different API Key
+### Attempt 2: Use a different API Key, without referrer link
 
 For the second attempt, I created a new API Key, without a referrer link this time, and here are the results:
 
-URL to map:
 ```
 https://helenplesko.github.io/geom99lab2/tutorials/testpages/testtwobonusfindplaces.html
 ```
@@ -59,4 +56,4 @@ https://helenplesko.github.io/geom99lab2/tutorials/testpages/testtwobonusfindpla
 - Google Chrome is the web browser used to open maps.
 - The problem is happening on my computer and on my iPhone.
 - API Key was made in ArcGIS Developers.
-- Referrer Link includes an * at the end.
+- Referrer Link for API Key includes an * at the end.
