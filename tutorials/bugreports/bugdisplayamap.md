@@ -1,21 +1,5 @@
 # Bug Report for Tutorial 1: Display a map
 
-## Basemap error debugged!!!
-
-When playing around with the basemaps for my customized map, an error had popped up saying the basemap name I chose was invalid. I noticed in the list of valid basemaps, "arcgis/topographic" wasn't there, but "topo" was. After looking more into these basemaps, "topo" is deprecated. So, I changed that line in the code to "topo-vector" and commented out my API Key and voila! The intended map was produced! 
-
-Final URL: 
-```
-https://helenplesko.github.io/geom99lab2/tutorials/displayamap.html
-```
-
-Basemap source: 
-```
-https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap
-```
-
----
-
 ## Describe the bug
 
 The purpose of the ArcGIS Maps SDK for JavaScript "Display a map" Tutorial is to create a map that displays the topographic basemap layer for an area of the Santa Monica Mountains in California. However, after completing the tutorial and opening the html page in Google Chrome, the map appeared blank and there was an error with the API Key and the basemap.
@@ -79,3 +63,20 @@ https://helenplesko.github.io/geom99lab2/tutorials/testpages/testtwodisplayamap.
 - The problem is happening on my computer and on my iPhone.
 - API Key was made in ArcGIS Developers.
 - Referrer Link for API Key includes an * at the end.
+
+---
+
+## Basemap error debugged!!!
+
+When playing around with the basemaps for my customized map, an error had popped up saying the basemap name I chose was invalid. I noticed in the list of valid basemaps, "arcgis/topographic" wasn't there, but "topo" was. After looking more into these basemaps, "topo" is deprecated. So, I changed that line in the code to "topo-vector" and commented out my API Key and voila! The intended map was produced! 
+
+Final URL: 
+```
+https://helenplesko.github.io/geom99lab2/tutorials/displayamap.html
+```
+
+Basemap source: 
+```
+https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap
+```
+

@@ -1,21 +1,5 @@
 # Bug Report for Tutorial 3 (Bonus): Find places
 
-## Basemap error debugged!!!
-
-When playing around with the basemaps for my customized map, an error had popped up saying the basemap name I chose was invalid. I noticed in the list of valid basemaps, "arcgis/topographic" wasn't there, but "topo" was. After looking more into these basemaps, I found "streets-navigation-vector". So, I changed the basemap in the code to "streets-navigation-vector". 
-
-Final URL: 
-```
-https://helenplesko.github.io/geom99lab2/tutorials/bugbonusfindplaces.html
-```
-
-Basemap source: 
-```
-https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap
-```
-
----
-
 ## Describe the bug
 
 The purpose of the ArcGIS Maps SDK for JavaScript "Find places" Tutorial is to create a map that allows you to see places on the map depending on the category chosen. It allows you to click the graphics as well, to find the name and address of the places in a pop-up. However, after completing the tutorial and opening the html page in Google Chrome, nothing appears.
@@ -73,3 +57,21 @@ https://helenplesko.github.io/geom99lab2/tutorials/testpages/testtwobonusfindpla
 - The problem is happening on my computer and on my iPhone.
 - API Key was made in ArcGIS Developers.
 - Referrer Link for API Key includes an * at the end.
+
+---
+
+## Basemap error debugged!!!
+
+When playing around with the basemaps for my customized map, an error had popped up saying the basemap name I chose was invalid. I noticed in the list of valid basemaps, "arcgis/topographic" wasn't there, but "topo" was. After looking more into these basemaps, I found "streets-navigation-vector". So, I changed the basemap in the code to "streets-navigation-vector". 
+
+AGOL sign in is still required here though... when API Key is commented out, nothing appears.
+
+Final URL: 
+```
+https://helenplesko.github.io/geom99lab2/tutorials/bugbonusfindplaces.html
+```
+
+Basemap source: 
+```
+https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap
+```

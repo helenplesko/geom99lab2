@@ -12,7 +12,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-        <title>Top 5 Romantic Getaways</title>
+        <title>Top 5 Romantic Destinations</title>
 
         <style>
             html,
@@ -45,10 +45,10 @@
                     basemap: "dark-gray-vector" 
                 });
 
-                // Create a MapView, so the map is centered on Paris, France
+                // Create a MapView, so the map is centered on Madrid, Spain
                 const view = new MapView({
                     map: map,
-                    center: [0, 0],
+                    center: [-3.703790, 40.416775],
                     zoom: 10, 
                     container: "viewDiv"
                 });
@@ -56,6 +56,7 @@
                 // Add the graphics layer to store graphics
                 const graphicsLayer = new GraphicsLayer();
                 map.add(graphicsLayer);
+
 
                 // 1) GALWAY, IRELAND
                 const galwayPoint = { // Create a point
@@ -73,7 +74,7 @@
                 }
                 const galwayAttributes = { // Info for inside pop-up
                     Name: "Number 1",
-                    Description: "Galway, Ireland is the first most romantic getaway in the world according to The Knot, a reputable wedding planning company."
+                    Description: "Galway, Ireland is rated the first most romantic destination in the world according to The Knot, a reputable wedding planning company."
                 }
                 const galwayGraphic = new Graphic({ // Create a point graphic
                     geometry: galwayPoint,
@@ -100,7 +101,7 @@
                 }
                 const amalfiAttributes = { // Info for inside pop-up
                     Name: "Number 2",
-                    Description: "Amalfi Coast, Italy is the second most romantic getaway in the world according to The Knot, a reputable wedding planning company."
+                    Description: "Amalfi Coast, Italy is rated the second most romantic destination in the world according to The Knot, a reputable wedding planning company."
                 }
                 const amalfiGraphic = new Graphic({ // Create a point graphic
                     geometry: amalfiPoint,
@@ -127,7 +128,7 @@
                 }
                 const stluciaAttributes = { // Info for inside pop-up
                     Name: "Number 3",
-                    Description: "St. Lucia is the third most romantic getaway in the world according to The Knot, a reputable wedding planning company."
+                    Description: "St. Lucia is rated the third most romantic destination in the world according to The Knot, a reputable wedding planning company."
                 }
                 const stluciaGraphic = new Graphic({ // Create a point graphic
                     geometry: stluciaPoint,
@@ -154,7 +155,7 @@
                 }
                 const santoriniAttributes = { // Info for inside pop-up
                     Name: "Number 4",
-                    Description: "Santorini, Greece is the fourth most romantic getaway in the world according to The Knot, a reputable wedding planning company."
+                    Description: "Santorini, Greece is rated the fourth most romantic destination in the world according to The Knot, a reputable wedding planning company."
                 }
                 const santoriniGraphic = new Graphic({ // Create a point graphic
                     geometry: santoriniPoint,
@@ -181,7 +182,7 @@
                 }
                 const lisbonAttributes = { // Info for inside pop-up
                     Name: "Number 5",
-                    Description: "Lisbon, Portugal is the fifth most romantic getaway in the world according to The Knot, a reputable wedding planning company."
+                    Description: "Lisbon, Portugal is rated the fifth most romantic destination in the world according to The Knot, a reputable wedding planning company."
                 }
                 const lisbonGraphic = new Graphic({ // Create a point graphic
                     geometry: lisbonPoint,
@@ -197,7 +198,6 @@
     </head>
     
     <body>
-        <h1>Top 5 Romantic Getaway Destinations</h1>
 
         <!-- Div to hold map contents -->
         <div id="viewDiv"></div>
