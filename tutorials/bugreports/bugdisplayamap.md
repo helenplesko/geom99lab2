@@ -22,9 +22,14 @@ The code in the tutorial is expected to display a map that displays the topograp
 
 The bug produced no map and two errors:
 
+URL:
+```
+https://helenplesko.github.io/geom99lab2/tutorials/displayamap.html
+```
+
 ![Errors](/tutorials/bugimages/bugdisplayamap.png)
 
-## Steps taken in attempt to resolve issue
+## Attempts to debug
 
 ### Attempt 1: Comment out API key
 
@@ -32,7 +37,7 @@ The first attempt to debugging this was to comment out the API key, as there was
 
 URL to map:
 ```
-https://helenplesko.github.io/geom99lab2/tutorials/testonedisplayamap.html
+https://helenplesko.github.io/geom99lab2/tutorials/testpages/testonedisplayamap.html
 ```
 
 ![Attempt 1 results](/tutorials/bugimages/testonedisplayamap.png)
@@ -49,7 +54,7 @@ I used this code and it produced the following, which I believe is a closer resu
 
 URL to map:
 ```
-https://helenplesko.github.io/geom99lab2/tutorials/testtwodisplayamap.html
+https://helenplesko.github.io/geom99lab2/tutorials/testpages/testtwodisplayamap.html
 ```
 
 ![Attempt 2 results](/tutorials/bugimages/testtwodisplayamap.png)

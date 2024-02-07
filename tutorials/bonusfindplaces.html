@@ -20,8 +20,8 @@
         </style>
 
         <!-- References to the CSS file and JS library -->
-        <link rel="stylesheet" href="https://js.arcgis.com/4.19/esri/themes/light/main.css">
-        <script src="https://js.arcgis.com/4.19/"></script>
+        <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
+        <script src="https://js.arcgis.com/4.28/"></script>
 
         <!-- Load the Map and MapView modules with the require function -->
         <script>
@@ -39,7 +39,7 @@
 
                 // Creating new map, where the basemap is navigation
                 const map = new Map({
-                    basemap: "arcgis-navigation" // basemap styles service accessed with API Key
+                    basemap: "arcgis/navigation" // basemap styles service accessed with API Key
                 });
 
                 // Create a MapView, so the map is centered on Tromso

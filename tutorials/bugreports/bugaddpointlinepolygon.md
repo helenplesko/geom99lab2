@@ -29,19 +29,31 @@ https://helenplesko.github.io/geom99lab2/tutorials/addpointlinepolygon.html
 
 ![Errors](/tutorials/bugimages/bugaddpointlinepolygon.png)
 
-## Steps taken in attempt to resolve issue
+## Attempts to debug
 
 ### Attempt 1: Comment out API key
 
 The first attempt to debugging this was to comment out the API key, as there was an error retrieving authorization. This change didn't produce a map. Instead, a window popped up where I had to sign into AGOL to see the item. My login wasn't working, and I wondered if it was because we need to sign into Fleming organization when signing in to AGOL.
 
+URL to map:
+```
+https://helenplesko.github.io/geom99lab2/tutorials/testpages/testoneaddpointlinepolygon.html
+```
+
 ![Attempt 1 results](/tutorials/bugimages/testoneaddpointlinepolygon.png)
 
 ### Attempt 2: Use a different code
 
-For the second attempt, I used the older version of the stylesheet, reference to ArcGIS, and basemaps found in the "Display a map (2D)" tutorial. I used this code and it produced the following, which I believe is a closer result to what we want the map to display:
+For the second attempt, I used the older version of the stylesheet, reference to ArcGIS, and basemaps. The code can be found in the "Display a map (2D)" tutorial. 
 
 ![Older version of code](/tutorials/bugimages/olderversioncode.png)
+
+I used this code and it produced the following, which I believe is a closer result to what we want the map to display:
+
+URL to map:
+```
+https://helenplesko.github.io/geom99lab2/tutorials/testpages/testtwoaddpointlinepolygon.html
+```
 
 ![Attempt 2 results](/tutorials/bugimages/testtwoaddpointlinepolygon.png)
 
