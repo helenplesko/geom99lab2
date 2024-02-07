@@ -1,8 +1,20 @@
 # Bug Report for Tutorial 2: Add a point, line, and polygon
 
-## Debugged!!!
+## Basemap error debugged!!!
 
-When playing around with the basemaps for my customized map, an error had popped up saying the basemap name I chose was invalid. I noticed in the list of valid basemaps, "arcgis/topographic" wasn't there, but "topo" was. I changed that line in the code and commented out my API Key and voila! The intended map was produced!
+When playing around with the basemaps for my customized map, an error had popped up saying the basemap name I chose was invalid. I noticed in the list of valid basemaps, "arcgis/topographic" wasn't there, but "topo" was. After looking more into these basemaps, "topo" is deprecated. So, I changed that line in the code to "topo-vector" and commented out my API Key and voila! The intended map was produced! 
+
+Final URL: 
+```
+https://helenplesko.github.io/geom99lab2/tutorials/addpointlinepolygon.html
+```
+
+Basemap source: 
+```
+https://developers.arcgis.com/javascript/3/jsapi/esri.basemaps-amd.html
+```
+
+---
 
 ## Describe the bug
 
@@ -27,7 +39,7 @@ The code in the tutorial is expected to display a map of the topographic basemap
 The bug produced no map and two errors:
 
 ```
-https://helenplesko.github.io/geom99lab2/tutorials/addpointlinepolygon.html
+https://helenplesko.github.io/geom99lab2/tutorials/testpages/tutaddpointlinepolygon.html
 ```
 
 ![Errors](/tutorials/bugimages/bugaddpointlinepolygon.png)

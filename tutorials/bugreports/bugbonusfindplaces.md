@@ -1,5 +1,21 @@
 # Bug Report for Tutorial 3 (Bonus): Find places
 
+## Basemap error debugged!!!
+
+When playing around with the basemaps for my customized map, an error had popped up saying the basemap name I chose was invalid. I noticed in the list of valid basemaps, "arcgis/topographic" wasn't there, but "topo" was. After looking more into these basemaps, I found streets-navigation-vector. So, I changed the basemap in the code to "streets-navigation-vector" and commented out my API Key and voila! The intended map was produced! 
+
+Final URL: 
+```
+https://helenplesko.github.io/geom99lab2/tutorials/bugbonusfindplaces.html
+```
+
+Basemap source: 
+```
+https://developers.arcgis.com/javascript/3/jsapi/esri.basemaps-amd.html
+```
+
+---
+
 ## Describe the bug
 
 The purpose of the ArcGIS Maps SDK for JavaScript "Find places" Tutorial is to create a map that allows you to see places on the map depending on the category chosen. It allows you to click the graphics as well, to find the name and address of the places in a pop-up. However, after completing the tutorial and opening the html page in Google Chrome, nothing appears.
@@ -23,7 +39,7 @@ The code in the tutorial is expected to display a map that allows you to see pla
 The bug produced no map and two errors:
 
 ```
-https://helenplesko.github.io/geom99lab2/tutorials/bonusfindplaces.html
+https://helenplesko.github.io/geom99lab2/tutorials/testpages/tutbonusfindplaces.html
 ```
 
 ![Errors](/tutorials/bugimages/bugbonusfindplaces.png)

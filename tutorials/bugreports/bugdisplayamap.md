@@ -1,5 +1,21 @@
 # Bug Report for Tutorial 1: Display a map
 
+## Basemap error debugged!!!
+
+When playing around with the basemaps for my customized map, an error had popped up saying the basemap name I chose was invalid. I noticed in the list of valid basemaps, "arcgis/topographic" wasn't there, but "topo" was. After looking more into these basemaps, "topo" is deprecated. So, I changed that line in the code to "topo-vector" and commented out my API Key and voila! The intended map was produced! 
+
+Final URL: 
+```
+https://helenplesko.github.io/geom99lab2/tutorials/displayamap.html
+```
+
+Basemap source: 
+```
+https://developers.arcgis.com/javascript/3/jsapi/esri.basemaps-amd.html
+```
+
+---
+
 ## Describe the bug
 
 The purpose of the ArcGIS Maps SDK for JavaScript "Display a map" Tutorial is to create a map that displays the topographic basemap layer for an area of the Santa Monica Mountains in California. However, after completing the tutorial and opening the html page in Google Chrome, the map appeared blank and there was an error with the API Key and the basemap.
@@ -23,7 +39,7 @@ The code in the tutorial is expected to display a map that displays the topograp
 The bug produced no map and two errors:
 
 ```
-https://helenplesko.github.io/geom99lab2/tutorials/displayamap.html
+https://helenplesko.github.io/geom99lab2/tutorials/testpages/tutdisplayamap.html
 ```
 
 ![Errors](/tutorials/bugimages/bugdisplayamap.png)
