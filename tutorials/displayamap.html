@@ -25,11 +25,7 @@
 
         <!-- Load the Map and MapView modules with the require function -->
         <script>
-            require([
-                "esri/config", 
-                "esri/Map", 
-                "esri/views/MapView"
-                ], function(esriConfig, Map, MapView) {
+            require(["esri/config", "esri/Map", "esri/views/MapView"], function(esriConfig, Map, MapView) {
                
                 // API Key created in ArcGIS Developers
                 esriConfig.apiKey = "AAPK1e47e0df150146abb6a14f0a1895d872cu1-mLpenYEaDB6pWEDv6B5Qc9CiQvtuFUp6wlIQ1OjmC2ojvHhWO0ZqhINUkE5I";
@@ -42,12 +38,9 @@
                 // Create a MapView, so the map is centered on an area of the Santa Monica Mountains in California
                 const view = new MapView({
                     map: map,
-                    center: [-118.805, 34.027], // Longitude, latitude of center of map
-                    zoom: 13, // Zoom level with scale scale: 72223.819286
-                    container: "viewDiv", // Div element to hold contents of the map,
-                    constraints: {
-                        snapToZoom: false
-                    }
+                    center: [-118.805, 34.027], // Longitude, latitude
+                    zoom: 13, // Zoom level
+                    container: "viewDiv" // Div element
                 });
 
             });

@@ -31,15 +31,11 @@ For the second attempt, I noticed that there were two different tutorials with s
 
 The "Display a map (2D)" tutorial used a different stylesheet, reference to ArcGIS, and basemaps. I used this code and it produced the following, which I believe is a closer result to what we want the map to display:
 
-![Attempt 2 results](/tutorials/testtwodisplayamap.png)
+![Attempt 2 results](/testtwodisplayamap.png)
 
 ### Attempt 3: Copy code directly
 
-Since I was following the steps of the tutorial and copying it piece by piece, I thought maybe I had missed a chunk of code. So, I copied and pasted the code directly from the last step in the tutorial, but the results were the same.
-
-### Attempt 4: Change the API Key Referrer Link
-
-I thought 
+Since I was following the steps of the tutorial and copying it piece by piece, I thought maybe I had missed a chunk of code. So, I copied and pasted the code directly from the last step in the tutorial, but the results produced the same errors as the original bug results.
 
 ## Environment Details
 
@@ -47,4 +43,4 @@ I thought
 - GitHub is open on Google Chrome.
 - The problem is happening on my computer and on my iPhone.
 - I am logged in on AGOL in another tab in the same window.
-- API Key is being used within the 2 hour window.
+- Referrer Link includes an * at the end.
