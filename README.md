@@ -69,7 +69,7 @@ https://helenplesko.github.io/geom99lab2/tutorials/displayamap.html
 
 Bug Report:
 ```
-
+https://github.com/helenplesko/geom99lab2/blob/main/tutorials/bugreports/bugdisplayamap.md
 ```
 
 #### Tutorial 2: Add a point, line, and polygon
@@ -81,7 +81,7 @@ https://helenplesko.github.io/geom99lab2/tutorials/addpointlinepolygon.html
 
 Bug Report:
 ```
-
+https://github.com/helenplesko/geom99lab2/blob/main/tutorials/bugreports/bugaddpointlinepolygon.md
 ```
 
 #### Tutorial 3 (Bonus): Find places
@@ -93,7 +93,7 @@ https://helenplesko.github.io/geom99lab2/tutorials/bonusfindplaces.html
 
 Bug Report:
 ```
-
+https://github.com/helenplesko/geom99lab2/blob/main/tutorials/bugreports/bugbonusfindplaces.md
 ```
 
 #### Enhanced Map:
