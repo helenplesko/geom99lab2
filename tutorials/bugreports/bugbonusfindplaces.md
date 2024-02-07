@@ -8,7 +8,7 @@ The purpose of the ArcGIS Maps SDK for JavaScript "Find places" Tutorial is to c
 
 The bug doesn't happen sporatically for me, it happens every time. Here are the steps to duplicating the bug:
 
-1. Complete the ArcGIS Maps SDK for JavaScript ["Add a point, line, and polygon"](https://developers.arcgis.com/javascript/latest/tutorials/add-a-point-line-and-polygon/) Tutorial. Add API Key to code. Save the code in VSCode, then commit and push to the GitHub repository. 
+1. Complete the ArcGIS Maps SDK for JavaScript ["Find places"](https://developers.arcgis.com/javascript/latest/tutorials/find-places/) Tutorial. Add API Key to code. Save the code in VSCode, then commit and push to the GitHub repository. 
 2. Open the page URL in web browser.
 3. Ctl+Shift+C to inspect page and see the errors.
 
