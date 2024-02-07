@@ -3,6 +3,7 @@
 <html>
     <head>
         <!-- Enhanced map completed by Helen Plesko on February 7, 2024 -->
+        <!-- Enhanced from ArcGIS Maps SDK for JavaScript Tutorials: Add a point, line, and polygon tutorial -->
 
         <meta charset="utf-8" />
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -23,27 +24,61 @@
         <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
         <script src="https://js.arcgis.com/4.28/"></script>
 
-        <!-- Load the Map and MapView modules with the require function -->
+        <!-- Load the modules with the require function -->
         <script>
             require([
                 "esri/config", 
                 "esri/Map", 
-                "esri/views/MapView"
-            ], function(esriConfig, Map, MapView) {
-
-                // Creating new map, where the basemap is topographic
-                // Basemap source: https://developers.arcgis.com/javascript/3/jsapi/esri.basemaps-amd.html
+                "esri/views/MapView",
+                "esri/Graphic",
+                "esri/layers/GraphicsLayer"
+                ], function(esriConfig,Map, MapView, Graphic, GraphicsLayer) {
+            
+                // Creating new map, where the basemap is World Street Map (Night)
+                // Basemap source: https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap
                 const map = new Map({
-                    basemap: "topo-vector" // basemap styles service accessed with API Key
+                    basemap: "streets-night-vector" // basemap styles service accessed with API Key
                 });
 
                 // Create a MapView, so the map is centered on Toronto, Ontario
                 const view = new MapView({
                     map: map,
-                    center: [-118.805, 34.027], // Longitude, latitude
-                    zoom: 13, // Zoom level
-                    container: "viewDiv" // Div element that holds map content
+                    center: [43.6532, -79.3832], // Longitude, latitude of center of map
+                    zoom: 10, // Zoom level
+                    container: "viewDiv" // Div element to hold contents of the map
                 });
+
+                // Add the graphics layer to store graphics
+                const graphicsLayer = new GraphicsLayer();
+                map.add(graphicsLayer);
+
+                // Add a point positioned at Point Dume Beach
+                const heartPoint = { // Create a point
+                    type: "point",
+                    longitude: 43.645972501828965,
+                    latitude: -79.39578469954743
+                }; 
+                const heartMarkerSymbol = { // Customize the marker
+                    type: "picture-marker",
+                    url: "https://img.icons8.com/tiny-color/16/like.png"
+                };
+
+                const heartPopUp = { // Create a pop-up for the polygon graphic when it is clicked
+                    title: "{Name}",
+                    content: "{Description}"
+                }
+                const heartAttributes = { // Info for inside pop-up for polygon graphic
+                    Name: "SOMA Chocolatemaker",
+                    Description: "443 King St W, Toronto, ON M5V 1K4"
+                }
+                const pointGraphic = new Graphic({ // Create a point graphic
+                    geometry: heartPoint,
+                    symbol: heartMarkerSymbol,
+                    attributes: heartAttributes,
+                    popupTemplate: heartPopUp
+                });
+                
+                graphicsLayer.add(pointGraphic);
 
             });
         </script>

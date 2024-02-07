@@ -2,7 +2,7 @@
 
 ## Basemap error debugged!!!
 
-When playing around with the basemaps for my customized map, an error had popped up saying the basemap name I chose was invalid. I noticed in the list of valid basemaps, "arcgis/topographic" wasn't there, but "topo" was. After looking more into these basemaps, I found streets-navigation-vector. So, I changed the basemap in the code to "streets-navigation-vector" and commented out my API Key and voila! The intended map was produced! 
+When playing around with the basemaps for my customized map, an error had popped up saying the basemap name I chose was invalid. I noticed in the list of valid basemaps, "arcgis/topographic" wasn't there, but "topo" was. After looking more into these basemaps, I found "streets-navigation-vector". So, I changed the basemap in the code to "streets-navigation-vector". 
 
 Final URL: 
 ```
@@ -11,7 +11,7 @@ https://helenplesko.github.io/geom99lab2/tutorials/bugbonusfindplaces.html
 
 Basemap source: 
 ```
-https://developers.arcgis.com/javascript/3/jsapi/esri.basemaps-amd.html
+https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap
 ```
 
 ---

@@ -11,7 +11,7 @@ https://helenplesko.github.io/geom99lab2/tutorials/addpointlinepolygon.html
 
 Basemap source: 
 ```
-https://developers.arcgis.com/javascript/3/jsapi/esri.basemaps-amd.html
+https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap
 ```
 
 ---
