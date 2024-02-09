@@ -34,7 +34,7 @@ https://helenplesko.github.io/geom99lab2/geojson/capybaras.geojson
 
 ### Introducing AGOL Developers Website
 
-Created my own "Developers" account
+Created my own "Developers" account with personal email to use after graduating.
 
 ### AGOL Developers: Create a new empty layer
 
@@ -64,7 +64,7 @@ https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/fall_geom65_t
 
 Original Tutorial URL:
 ```
-https://github.com/helenplesko/geom99lab2/blob/main/tutorials/testpages/tutdisplayamap.html
+https://helenplesko.github.io/geom99lab2/tutorials/testpages/tutdisplayamap.html
 ```
 
 Working URL:
@@ -81,7 +81,7 @@ https://github.com/helenplesko/geom99lab2/blob/main/tutorials/bugreports/bugdisp
 
 Original Tutorial URL:
 ```
-https://github.com/helenplesko/geom99lab2/blob/main/tutorials/testpages/tutaddpointlinepolygon.html
+https://helenplesko.github.io/geom99lab2/tutorials/testpages/tutaddpointlinepolygon.html
 ```
 
 Working URL:
@@ -98,7 +98,7 @@ https://github.com/helenplesko/geom99lab2/blob/main/tutorials/bugreports/bugaddp
 
 Original Tutorial URL:
 ```
-https://github.com/helenplesko/geom99lab2/blob/main/tutorials/testpages/tutbonusaddfeaturelayer.html
+https://helenplesko.github.io/geom99lab2/tutorials/testpages/tutbonusaddfeaturelayer.html
 ```
 
 Working URL:
