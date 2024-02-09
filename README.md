@@ -20,7 +20,7 @@ Certificate earned on Esri Training site, transcript provided with final mark du
 
 Saved GeoJSON file in GitHub for High Park Capybaras
 ```
-https://helenplesko.github.io/geom99lab2/geojson/capybaras.geojson
+https://helenplesko.github.io/geom99lab2/geojson/capybarasgithub.geojson
 ```
 
 ## Week 4 Lessons
