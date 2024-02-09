@@ -14,7 +14,7 @@ The bug doesn't happen sporatically for me, it happens every time. Here are the 
 
 ## Expected result
 
-The code in the tutorial is expected to display a map that displays the topographic basemap layer for an area of the Santa Monica Mountains in California. Here is a screenshot taken from the tutorial page:
+The code in the tutorial is expected to display a map that uses URLs to access three hosted feature layers and displays them on the topographic basemap layer for an area of the Santa Monica Mountains in California. Here is a screenshot taken from the tutorial page:
 
 ![Expected Result](/tutorials/bugimages/expectedbonusaddfeaturelayer.png)
 
@@ -44,7 +44,7 @@ Due to the errors occuring on the previous two tutorials as well, I jumped right
 
 Final URL: 
 ```
-https://helenplesko.github.io/geom99lab2/tutorials/displayamap.html
+https://helenplesko.github.io/geom99lab2/tutorials/bonusaddfeaturelayer.html
 ```
 
 Basemap source: 
