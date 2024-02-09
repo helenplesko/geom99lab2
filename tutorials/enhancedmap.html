@@ -196,12 +196,12 @@
                 });
                 graphicsLayer.add(lisbonGraphic); // Add the graphic for this point to the graphic layer
 
-                
+
                 // Add a polygon feature layer hosted on my AGOL account
                 const pinkCountryLayer = new FeatureLayer({
-                    url: "https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/Esri_WorldCountries_Pink/FeatureServer"
+                    url: "https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/Esri_WorldCountries_Pink/FeatureServer/0"
                 });
-                map.add(pinkCountryLayer, 0);
+                map.add(pinkCountryLayer);
 
             });
         </script>
