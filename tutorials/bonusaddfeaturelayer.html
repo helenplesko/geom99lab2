@@ -30,13 +30,13 @@
 
                 // API Key added to access the basemap layer and location services
                 // Comment out API Key since it was producing an error
-                esriConfig.apiKey = "AAPK1e47e0df150146abb6a14f0a1895d872cu1-mLpenYEaDB6pWEDv6B5Qc9CiQvtuFUp6wlIQ1OjmC2ojvHhWO0ZqhINUkE5I";
+                // esriConfig.apiKey = "AAPK1e47e0df150146abb6a14f0a1895d872cu1-mLpenYEaDB6pWEDv6B5Qc9CiQvtuFUp6wlIQ1OjmC2ojvHhWO0ZqhINUkE5I";
 
                 // Creating new map, where the basemap is topographic
                 // Changing basemap because it was producing an error
                 // Basemap source: https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap
                 const map = new Map({
-                    basemap: "arcgis/topographic" // basemap styles service accessed through API key
+                    basemap: "topo-vector" // basemap styles service accessed through API key
                 });
 
                 // Create a MapView, so the map is centered on an area of the Santa Monica Mountains in California
