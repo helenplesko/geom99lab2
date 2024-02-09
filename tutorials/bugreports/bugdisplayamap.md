@@ -28,6 +28,14 @@ https://helenplesko.github.io/geom99lab2/tutorials/testpages/tutdisplayamap.html
 
 ![Errors](/tutorials/bugimages/bugdisplayamap.png)
 
+## Environment Details
+
+- VSCode was used to make, commit, and push changes to GitHub.
+- Google Chrome is the web browser used to open maps.
+- The problem is happening on my computer and on my iPhone.
+- API Key was made in ArcGIS Developers.
+- Referrer Link for API Key includes an * at the end.
+
 ## Attempts to debug
 
 ### Attempt 1: Comment out API key
@@ -56,19 +64,9 @@ https://helenplesko.github.io/geom99lab2/tutorials/testpages/testtwodisplayamap.
 
 ![Attempt 2 results](/tutorials/bugimages/testtwodisplayamap.png)
 
-## Environment Details
+### Attempt 3: Comment out API Key and change the basemap
 
-- VSCode was used to make, commit, and push changes to GitHub.
-- Google Chrome is the web browser used to open maps.
-- The problem is happening on my computer and on my iPhone.
-- API Key was made in ArcGIS Developers.
-- Referrer Link for API Key includes an * at the end.
-
----
-
-## Basemap error debugged!!!
-
-When playing around with the basemaps for my customized map, an error had popped up saying the basemap name I chose was invalid. I noticed in the list of valid basemaps, "arcgis/topographic" wasn't there, but "topo" was. After looking more into these basemaps, "topo" is deprecated. So, I changed that line in the code to "topo-vector" and commented out my API Key and voila! The intended map was produced! 
+When playing around with the basemaps for my customized map, an error had popped up saying the basemap name I chose was invalid. I noticed in the list of valid basemaps, "arcgis/topographic" wasn't there, but "topo" was. After looking more into these basemaps, "topo" is deprecated. So, I changed that line in the code to "topo-vector" and commented out my API Key and voila! The intended map was produced! API Key remained commented out.
 
 Final URL: 
 ```
@@ -80,3 +78,7 @@ Basemap source:
 https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap
 ```
 
+## Conclusion
+
+- API Key still didn't work - had to remain commented out
+- Basemap "arcgis/topographic" was not recognized, had to change to "topo-vector"

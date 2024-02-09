@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Tutorial completed by Helen Plesko on February 8, 2024 -->
+        <!-- See Bug Report for details on how I debugged the tutorial code to get it to work -->
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>ArcGIS Maps SDK for JavaScript Tutorials: Add a feature layer</title>
+        
+        <style>
+            html, body, #viewDiv {
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
+        <script src="https://js.arcgis.com/4.28/"></script>
+
+        <script>
+            require([
+                "esri/config",
+                "esri/Map",
+                "esri/views/MapView",
+                "esri/layers/FeatureLayer" // FeatureLayer module added
+            ], function(esriConfig, Map, MapView, FeatureLayer) {
+
+                // API Key added to access the basemap layer and location services
+                // Comment out API Key since it was producing an error
+                esriConfig.apiKey = "AAPK1e47e0df150146abb6a14f0a1895d872cu1-mLpenYEaDB6pWEDv6B5Qc9CiQvtuFUp6wlIQ1OjmC2ojvHhWO0ZqhINUkE5I";
+
+                // Creating new map, where the basemap is topographic
+                // Changing basemap because it was producing an error
+                // Basemap source: https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap
+                const map = new Map({
+                    basemap: "arcgis/topographic" // basemap styles service accessed through API key
+                });
+
+                // Create a MapView, so the map is centered on an area of the Santa Monica Mountains in California
+                const view = new MapView({
+                    container: "viewDiv",
+                    map: map,
+                    center: [-118.80543,34.02700],
+                    zoom: 13
+                });
+
+                //Trailheads feature layer (points)
+                const trailheadsLayer = new FeatureLayer({
+                    url: "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trailheads/FeatureServer/0"
+                });
+                map.add(trailheadsLayer); // Add feature layer to map
+
+                //Trails feature layer (lines)
+                const trailsLayer = new FeatureLayer({
+                    url: "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trails/FeatureServer/0"
+                });
+                map.add(trailsLayer, 0); // Add feature layer to map
+
+                // Parks and open spaces (polygons)
+                const parksLayer = new FeatureLayer({
+                    url: "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Parks_and_Open_Space/FeatureServer/0"
+                });
+                map.add(parksLayer, 0); // Add feature layer to map
+
+            });
+        </script>
+
+    </head>
+
+    <body>
+        <!-- Div to hold map contents -->
+        <div id="viewDiv"></div>
+    </body>
+
+</html>

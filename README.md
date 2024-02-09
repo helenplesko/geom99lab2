@@ -60,7 +60,7 @@ https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/fall_geom65_t
 
 ### Explore and Enhance the Tutorials for ArcGIS JavaScript API
 
-#### Tutorial 1: Display a map 2D
+#### Tutorial 1: [Display a map](https://developers.arcgis.com/javascript/latest/tutorials/display-a-map/)
 
 URL:
 ```
@@ -72,7 +72,7 @@ Bug Report:
 https://github.com/helenplesko/geom99lab2/blob/main/tutorials/bugreports/bugdisplayamap.md
 ```
 
-#### Tutorial 2: Add a point, line, and polygon
+#### Tutorial 2: [Add a point, line, and polygon](https://developers.arcgis.com/javascript/latest/tutorials/add-a-point-line-and-polygon/)
 
 URL:
 ```
@@ -84,19 +84,19 @@ Bug Report:
 https://github.com/helenplesko/geom99lab2/blob/main/tutorials/bugreports/bugaddpointlinepolygon.md
 ```
 
-#### Tutorial 3 (Bonus): Find places
+#### Tutorial 3 (Bonus): [Add a feature layer](https://developers.arcgis.com/javascript/latest/tutorials/add-a-feature-layer/)
 
 URL:
 ```
-https://helenplesko.github.io/geom99lab2/tutorials/bonusfindplaces.html
+https://helenplesko.github.io/geom99lab2/tutorials/bonusaddfeaturelayer.html
 ```
 
 Bug Report:
 ```
-https://github.com/helenplesko/geom99lab2/blob/main/tutorials/bugreports/bugbonusfindplaces.md
+https://github.com/helenplesko/geom99lab2/blob/main/tutorials/bugreports/bugbonusaddfeaturelayer.md
 ```
 
-#### Enhanced Map:
+#### Enhanced Map, Valentine's Day themed:
 
 URL:
 ```
