@@ -7,8 +7,12 @@
             <!-- ArcGIS Maps SDK for JavaScript Tutorials: Display a map -->
             <!-- ArcGIS Maps SDK for JavaScript Tutorials: Add a point, line, and polygon tutorial -->
 
+        <!-- API Key not added because it didn't work in the other tutorials, so I omitted it for this one -->
+
         <!-- Here are the top ten romantic places in the world, according to The Knot (a popular wedding planning site/company)-->
         <!-- https://www.theknot.com/content/most-romantic-places -->
+
+        <!-- Icons from icons8: https://img.icons8.com/tiny-color/16/like.png -->
 
         <meta charset="utf-8" />
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -191,6 +195,13 @@
                     popupTemplate: lisbonPopUp
                 });
                 graphicsLayer.add(lisbonGraphic); // Add the graphic for this point to the graphic layer
+
+                
+                // Add a polygon feature layer hosted on my AGOL account
+                const pinkCountryLayer = new FeatureLayer({
+                    url: "https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/Esri_WorldCountries_Pink/FeatureServer"
+                });
+                map.add(pinkCountryLayer, 0);
 
             });
         </script>
