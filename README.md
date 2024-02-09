@@ -23,6 +23,11 @@ Saved GeoJSON file in GitHub for High Park Capybaras
 https://helenplesko.github.io/geom99lab2/geojson/capybarasgithub.geojson
 ```
 
+Methods and Bonus explained:
+```
+https://github.com/helenplesko/geom99lab2/blob/main/geojson/agolgeojson.md
+```
+
 ## Week 4 Lessons
 
 - [x] Introducing AGOL Developers Website
