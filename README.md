@@ -62,7 +62,12 @@ https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/fall_geom65_t
 
 #### Tutorial 1: [Display a map](https://developers.arcgis.com/javascript/latest/tutorials/display-a-map/)
 
-URL:
+Original Tutorial URL:
+```
+https://github.com/helenplesko/geom99lab2/blob/main/tutorials/testpages/tutdisplayamap.html
+```
+
+Working URL:
 ```
 https://helenplesko.github.io/geom99lab2/tutorials/displayamap.html
 ```
@@ -74,7 +79,12 @@ https://github.com/helenplesko/geom99lab2/blob/main/tutorials/bugreports/bugdisp
 
 #### Tutorial 2: [Add a point, line, and polygon](https://developers.arcgis.com/javascript/latest/tutorials/add-a-point-line-and-polygon/)
 
-URL:
+Original Tutorial URL:
+```
+https://github.com/helenplesko/geom99lab2/blob/main/tutorials/testpages/tutaddpointlinepolygon.html
+```
+
+Working URL:
 ```
 https://helenplesko.github.io/geom99lab2/tutorials/addpointlinepolygon.html
 ```
@@ -86,7 +96,12 @@ https://github.com/helenplesko/geom99lab2/blob/main/tutorials/bugreports/bugaddp
 
 #### Tutorial 3 (Bonus): [Add a feature layer](https://developers.arcgis.com/javascript/latest/tutorials/add-a-feature-layer/)
 
-URL:
+Original Tutorial URL:
+```
+https://github.com/helenplesko/geom99lab2/blob/main/tutorials/testpages/tutbonusaddfeaturelayer.html
+```
+
+Working URL:
 ```
 https://helenplesko.github.io/geom99lab2/tutorials/bonusaddfeaturelayer.html
 ```
