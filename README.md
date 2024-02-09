@@ -10,17 +10,17 @@
 
 ### Learn about ArcGIS Online Basics
 
-Certificate earned on Esri Training site
+Certificate earned on Esri Training site, transcript provided with final mark during lab
 
 ### Creating and Sharing GIS Content using ArcGIS Online
 
-Certificate earned on Esri Training site
+Certificate earned on Esri Training site, transcript provided with final mark during lab
 
 ### Discover JSON and importing data into Web Maps
 
 Saved GeoJSON file in GitHub for High Park Capybaras
 ```
-
+https://helenplesko.github.io/geom99lab2/geojson/capybaras.geojson
 ```
 
 ## Week 4 Lessons
@@ -30,7 +30,7 @@ Saved GeoJSON file in GitHub for High Park Capybaras
 - [x] Explore: Introduction to AGOL REST and Token Security
 - [x] Create Authentication Token
 - [x] Create API Key for Use in JavaScript Activities
-- [ ] Explore and Enhance the Tutorials for ArcGIS JavaScript API
+- [x] Explore and Enhance the Tutorials for ArcGIS JavaScript API
 
 ### Introducing AGOL Developers Website
 
